@@ -1,148 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qamel – Software built to carry the load</title>
+    <title>Qamel</title>
     <meta name="description" content="Qamel builds cloud infrastructure, custom software and data platforms that stay steady under heavy load.">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700;800&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:wght@400;500;700&family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    <header id="nav-bar">
-        <a id="logo" href="#home">QAMEL</a>
-        <nav aria-label="Main">
+
+    <nav id="nav-bar">
+        <a id="logo" href="#home" style="font-family:'Cormorant Garamond'; color: white;">QAMEL</a>
             <ul>
                 <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#careers">Careers</a></li>
-                <li><a href="#contact" class="pill">Contact</a></li>
+                <li><a href="#careers">Join Our Team</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
-        <button id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="menu-bar"><span></span><span></span></button>
-    </header>
+        <button id="menu-button">&#x2630;</button>
+    </nav>
 
-    <nav id="menu-bar" aria-label="Mobile">
+    <nav id="menu-bar" style="display: none;">
         <ul>
             <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#careers">Careers</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#careers">Join Our Team</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
 
-    <main>
-        <section id="home" class="mesh">
-            <h1 id="typed" data-text="When the load grows unbearable, all spines shiver but Qamel's." aria-label="When the load grows unbearable, all spines shiver but Qamel's."></h1>
-            <p class="lead">We design, build and run software for teams whose systems can't afford to buckle.</p>
-            <div class="actions">
-                <a class="btn" href="#solutions">Explore our services &rarr;</a>
-                <a class="btn ghost" href="#contact">Talk to an engineer</a>
-            </div>
-            <ul class="stats" aria-label="Qamel in numbers">
-                <li><strong>99.99%</strong> uptime across client platforms</li>
-                <li><strong>120+</strong> products shipped</li>
-                <li><strong>14 yrs</strong> building production systems</li>
-            </ul>
-        </section>
-
-        <section id="solutions" class="section">
-            <div class="wrap">
-                <h2>Solutions</h2>
-                <p class="sub">Four practices, one team. Hire us for a single project or as your long-term engineering partner.</p>
-                <div class="grid">
-                    <article>
-                        <h3>Cloud &amp; infrastructure</h3>
-                        <p>Migrations, autoscaling and cost-aware architecture on AWS, Azure and Google Cloud.</p>
-                    </article>
-                    <article>
-                        <h3>Custom software</h3>
-                        <p>Web and mobile products, from first prototype to platforms serving millions of requests.</p>
-                    </article>
-                    <article>
-                        <h3>Data &amp; AI</h3>
-                        <p>Pipelines, analytics and machine learning that turn raw data into decisions.</p>
-                    </article>
-                    <article>
-                        <h3>Security &amp; reliability</h3>
-                        <p>Audits, monitoring and on-call support so incidents are caught before customers notice.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section alt">
-            <div class="wrap">
-                <h2>Projects</h2>
-                <p class="sub">A few systems we keep standing.</p>
-                <div class="projects">
-                    <article>
-                        <span class="metric">3&times; faster</span>
-                        <h3>Payments platform</h3>
-                        <p>Rebuilt a regional payment gateway to handle peak-day traffic with no downtime.</p>
-                    </article>
-                    <article>
-                        <span class="metric">-42% cloud cost</span>
-                        <h3>Logistics tracking</h3>
-                        <p>Moved live fleet tracking to an event-driven architecture that scales on demand.</p>
-                    </article>
-                    <article>
-                        <span class="metric">2M users</span>
-                        <h3>Learning app</h3>
-                        <p>Launched a mobile learning product that held steady through national exam season.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="careers" class="section">
-            <div class="wrap band">
-                <div>
-                    <h2>Careers</h2>
-                    <p class="sub">Join engineers who like hard problems and calm launches. We're hiring across backend, DevOps and design.</p>
-                </div>
-                <a class="btn" href="#contact">See open roles &rarr;</a>
-            </div>
-        </section>
-    </main>
-
-    <footer id="contact" class="section alt">
-        <div class="wrap">
-            <h2>Contact</h2>
-            <p class="sub">Tell us what you're building. We reply within one business day.</p>
-            <a class="mail" href="mailto:hello@qamel.com">hello@qamel.com</a>
-            <p class="copy">&copy; 2026 Qamel. All rights reserved.</p>
+    <sec id="home" class="mesh">
+        <div class="typewriter"><h1 style="font-family: 'Fira Code';">When the load grows unbearable, all spines shiver but Qamel's.</h1></div>
+        <h2>IT Services &amp; IT Solutions</h2>
+        <div class="btns">
+            <a href="#solutions">Explore our service &rarr;</a>
+            <a href="#contact">Get in touch</a>
         </div>
+    </sec>
+
+    <sec id="solutions">
+        <h1 id="title">Solutions</h1>
+        <div id="containers">
+            <article>
+                <h1>Software Products</h1>
+                <hr>
+                <p>Custom software web and mobile applications development.</p>
+            </article>
+            <article>
+                <h1>Cloud &amp; Infrastructure</h1>
+                <hr>
+                <p>Migrate, manage, and optimize architecture on AWS, Azure and Google Cloud.</p>
+            </article>
+            <article>
+                <h1>Data Engineering &amp; AI for Businesses</h1>
+                <hr>
+                <p>Automate operations, analyze data, and build intelligent products.</p>
+            </article>
+            <article>
+                <h1>Security</h1>
+                <hr>
+                <p>Protect digital infrastructure, networks, and sensitive data from cyber threats.</p>
+            </article>
+            <article>
+                <h1>Quantum</h1>
+                <hr>
+                <p>Our short-term goal is to be able to provide applications of quantum machine learning, cryptography, and software.</p>
+            </article>
+        </div>
+    </sec>
+
+    <hr>
+
+    <sec id="careers">
+        <h1 id="title">Become part of our team!</h1>
+        <p>We are looking for IT students and fresh graduates that aim to work on real life projects and gain hands-on experience.</p>
+        <a href="">Apply Now &nearr;</a>
+    </sec>
+
+    <hr>
+
+    <sec id="contact">
+        <h1 id="title">Contact us</h1>
+        <a href="mailto:rabeebanisalman@gmail.com">info@qamel.online</a>
+        <p style="display: none;">Founder</p>
+        <a href="https://www.linkedin.com/company/qamelsoftware" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square"></i></a>
+    </sec>
+
+    <footer>
+        <p>&commat; Qamel. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        // Typing animation (wraps cleanly on small screens)
-        const el = document.getElementById('typed');
-        const text = el.dataset.text;
-        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        if (reduce) { el.textContent = text; }
-        else {
-            let i = 0;
-            const tick = () => {
-                el.textContent = text.slice(0, ++i);
-                if (i < text.length) setTimeout(tick, 56);
-            };
-            tick();
-        }
-
-        // Mobile menu
-        const btn = document.getElementById('menu');
-        const menu = document.getElementById('menu-bar');
-        const setMenu = open => {
-            menu.classList.toggle('open', open);
-            btn.classList.toggle('open', open);
-            btn.setAttribute('aria-expanded', open);
-        };
-        btn.addEventListener('click', () => setMenu(!menu.classList.contains('open')));
-        menu.addEventListener('click', e => { if (e.target.tagName === 'A') setMenu(false); });
-    </script>
 </body>
-</html>
